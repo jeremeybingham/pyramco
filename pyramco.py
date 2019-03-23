@@ -130,7 +130,7 @@ def update_entity(entity, guid, *attributes, string_delimiter=''):
         'key': config.ramco_api_key,
         'Operation':'UpdateEntity',
         'Entity': entity,
-		'Guid':' guid,
+	'Guid':' guid,
         'AttributeValues': attributes,
         'StringDelimiter': string_delimiter
         }
