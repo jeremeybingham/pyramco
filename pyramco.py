@@ -9,7 +9,10 @@ Requires the "requests" module:
 https://pypi.org/project/requests/
 
 your RAMCO API key should be set as an environment variable 'RAMCO_API_KEY'
-or uncomment and add the following line with your key as a string
+or
+set in config.py and import it
+or
+uncomment and add the following line with your key as a string
 manual_api_key = ''
 
 '''
@@ -25,6 +28,8 @@ url = 'https://api.ramcoams.com/api/v2/'
 # deal with api key
 if os.environ['RAMCO_API_KEY']:
     api_key = os.environ['RAMCO_API_KEY']
+elif config:
+    api_key = config.ramco_api_key
 else:
     api_key = manual_api_key
 
@@ -320,7 +325,6 @@ def delete_entity(entity, guid):
 def base64_encode(input):
     output = str(base64.standard_b64encode(input))
     return(output)
-
 
 def base64_decode(input):
     output = base64.standard_b64decode(input)
