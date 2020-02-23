@@ -1,6 +1,7 @@
 '''
 pyramco
-version 0.9.5
+version 0.9.6
+2-23-2020
 
 RAMCO API Documentation permalink:
 https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf
@@ -8,13 +9,8 @@ https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf
 Requires the "requests" module:
 https://pypi.org/project/requests/
 
-your RAMCO API key should be set as an environment variable 'RAMCO_API_KEY'
-or
-set in config.py and import it
-or
-uncomment and add the following line with your key as a string
-manual_api_key = ''
-
+your RAMCO API key should be set as an environment variable 
+import it as: os.environ['RAMCO_API_KEY']
 '''
 
 import requests
@@ -26,17 +22,12 @@ import os
 url = 'https://api.ramcoams.com/api/v2/'
 
 # deal with api key
-if os.environ['RAMCO_API_KEY']:
-    api_key = os.environ['RAMCO_API_KEY']
-elif config:
-    api_key = config.ramco_api_key
-else:
-    api_key = manual_api_key
+api_key = os.environ['RAMCO_API_KEY']
 
 # response code/error handling
 code_200 = {
     'DescriptionShort': 'OK',
-    'DescriptionVerbose': 'The request was successfully processed and data is included in the response'
+    'DescriptionVerbose': 'The request was successfully processed and data is included in the response.'
 }
 
 code_204 = {

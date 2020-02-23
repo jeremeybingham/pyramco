@@ -1,43 +1,23 @@
 # pyramco
-a complete wrapper class for the ramco api
-
-version 0.9.5
-
-12-20-2019
+A complete wrapper class for the RAMCO API
 
 
+version 0.9.6
+2-23-2020
 
 
 RAMCO API Documentation permalink:
-
 <https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf>
 
 
-
-
-place "pyramco.py" in the root directory with your application and import it
-
-
-
-
 Requires the **requests** module:
-
 <https://pypi.org/project/requests/>
-
-
 
 
 your RAMCO API key should be set as an environment variable `RAMCO_API_KEY`
 
 
-or:
 
+The contributors to Pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com 
 
-set in `config.py` and import that file
-
-
-or:
-
-
-uncomment and add the following line with your key as a string in 
-`manual_api_key = 'your_api_key_goes_here'`
+The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
