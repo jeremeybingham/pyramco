@@ -3,8 +3,6 @@
 
 *version 0.9.62*
 
-*2-23-2020*
-
 
 
 An Open-Source project maintained by [Mansard Consulting](https://mansard.net)
@@ -28,7 +26,7 @@ pyramco accesses this variable as: `os.environ['RAMCO_API_KEY']`
 - [ ] testing
 
 
-For now, method descriptions and API reference for this module is located in the main file: `pyramco.py`
+For now, method descriptions and API references for this module are located in the main file: `pyramco.py`
 
 
 
@@ -36,7 +34,4 @@ For now, method descriptions and API reference for this module is located in the
 
 
 
-###### The authors of pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The  NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com 
-
-
-###### The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+###### The authors of pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The  NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com. The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
