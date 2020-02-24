@@ -21,6 +21,16 @@ Your RAMCO API key should be set as an [environment variable:](https://stackover
 
 pyramco accesses this variable as: `os.environ['RAMCO_API_KEY']`
 
+### To-Do:
+- [x] deploy to pypi
+- [ ] Add additional API key handling options
+- [ ] begin documentation
+- [ ] testing
+
+
+For now, method descriptions and API reference for this module is located in the main file: `pyramco.py`
+
+
 
 [RAMCO API Documentation Permalink](https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf)
 
