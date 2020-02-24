@@ -10,7 +10,7 @@ An Open-Source project maintained by Mansard Consulting
 [RAMCO API Documentation Permalink](https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf)
 
 
-[Requires the **requests** module.]9https://pypi.org/project/requests/)
+[Requires the **requests** module.](https://pypi.org/project/requests/)
 
 
 Your RAMCO API key should be set as an [environment variable:](https://stackoverflow.com/questions/5971312/how-to-set-environment-variables-in-python) `RAMCO_API_KEY`
