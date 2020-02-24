@@ -1,8 +1,8 @@
 # pyramco
 ### A complete wrapper class for the RAMCO AMS API
 
-####*version 0.9.62*
-####*2-23-2020*
+#### *version 0.9.62*
+#### *2-23-2020*
 
 
 An Open-Source project maintained by Mansard Consulting
@@ -22,6 +22,6 @@ pyramco accesses this variable as: `os.environ['RAMCO_API_KEY']`
 
 
 
-######The authors of pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The  NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com 
+###### The authors of pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The  NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com 
 
-######The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+###### The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
