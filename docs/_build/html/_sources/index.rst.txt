@@ -67,7 +67,6 @@ https://github.com/mansard/pyramco/blob/master/LICENSE
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
 
 
