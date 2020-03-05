@@ -43,9 +43,12 @@ Install $pyramco by running:
 
 Requires the requests module: https://pypi.org/project/requests/
 
-Your RAMCO API key should be set as an environment variable: RAMCO_API_KEY
+Your RAMCO API key should be set as an environment variable: `RAMCO_API_KEY`
 
-pyramco accesses this variable as: os.environ['RAMCO_API_KEY']
+.. code-block:: python
+
+   # pyramco imports this variable as
+   os.environ['RAMCO_API_KEY']
 
 Contribute
 ----------
