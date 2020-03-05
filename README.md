@@ -1,7 +1,7 @@
 # pyramco
 ### A complete wrapper class for the RAMCO AMS API
 
-*version 0.9.62*
+*version 0.9.64*
 
 
 
@@ -22,12 +22,13 @@ pyramco accesses this variable as: `os.environ['RAMCO_API_KEY']`
 ### To-Do:
 - [x] deploy to pypi
 - [ ] Add additional API key handling options
-- [ ] begin documentation
-- [ ] testing
+- [x] begin documentation
+- [ ] testing tools
 
 
 For now, method descriptions and API references for this module are located in the main file: `pyramco.py`
 
+Draft documentation is a work in progress at: https://pyramco.readthedocs.io/en/latest/ 
 
 
 [RAMCO API Documentation Permalink](https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf)
