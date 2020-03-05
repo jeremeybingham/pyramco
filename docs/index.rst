@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-$pyramco
+pyramco
 ========
 
-$A complete Python wrapper class for the RAMCO AMS API.
+A complete Python wrapper class for the RAMCO AMS API.
 
 
 Make requests easier:
@@ -14,12 +14,10 @@ Make requests easier:
     import pyramco
     
     # get metadata for the Contact entity:
-    
     pyramco.get_entity_metadata('Contact')
 
 
     # fetch the first and last name of the Contact with ContactID 123456:
-
     pyramco.get_entity('Contact', 1232456, (FirstName, LastName))
 
 
@@ -67,7 +65,6 @@ https://github.com/mansard/pyramco/blob/master/LICENSE
 
 .. toctree::
    :maxdepth: 2
-
 
 
 Indices and tables
