@@ -11,6 +11,8 @@ A complete Python wrapper class for the RAMCO AMS API.
 
 Make requests easier:
 
+.. code-block:: python
+
     import pyramco
     
     # get metadata for the Contact entity:
@@ -33,6 +35,8 @@ Installation
 ------------
 
 Install $pyramco by running:
+
+.. code-block:: python
 
     pip install pyramco
 
