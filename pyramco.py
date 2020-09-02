@@ -1,7 +1,7 @@
 '''
 pyramco
-version 0.9.6
-2-23-2020
+version 0.9.69
+9-1-2020
 
 RAMCO API Documentation permalink:
 https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf
@@ -183,9 +183,9 @@ def clear_cache():
 
 
 # data querying operations
-def get_entity(entity, guid, *attributes):
+def get_entity(entity, guid, attributes):
     '''
-    Accepts an entity name, GUID, and a tuple of attribute names
+    Accepts an entity name, GUID, and a string of attribute names
     Returns attribute values for the specified entity matching the GUID
     '''
 
@@ -201,10 +201,10 @@ def get_entity(entity, guid, *attributes):
     return(reply)
 
 
-def get_entities(entity, *attributes, filters='',
-                 string_delimiter='', max_results=''):
+def get_entities(entity, attributes, filters='',
+                 string_delimiter='#', max_results=''):
     '''
-    Accepts an entity name, a tuple of attribute names, (optionally) a filter string, a string delimiter character, and an int value for max results
+    Accepts an entity name, a string of attribute names, (optionally) a filter string, a string delimiter character, and an int value for max results
     Returns all matches or the first n results for max results
     '''
 
@@ -257,9 +257,9 @@ def validate_user(username, password):
 
 
 # data transformation operations
-def update_entity(entity, guid, *attributes, string_delimiter=''):
+def update_entity(entity, guid, attributes, string_delimiter='#'):
     '''
-    Accepts a valid entity name + guid, a tuple of comma separated
+    Accepts a valid entity name + guid, a string of comma separated
     attribute=value pairs, and optionally a string delimiter character
     '''
 
@@ -276,9 +276,9 @@ def update_entity(entity, guid, *attributes, string_delimiter=''):
     return(reply)
 
 
-def create_entity(entity, *attributes, string_delimiter=''):
+def create_entity(entity, attributes, string_delimiter='#'):
     '''
-    Accepts a valid entity name, a tuple of comma separated attribute=value
+    Accepts a valid entity name, a string of comma separated attribute=value
     pairs, and optionally a string delimiter character
     '''
 

@@ -1,38 +1,31 @@
 # pyramco
-### A complete wrapper class for the RAMCO AMS API
-
-*version 0.9.64*
+A complete Python wrapper class for the RAMCO API
 
 
-
-An Open-Source project maintained by [Mansard Consulting](https://mansard.net)
-
-
-Install with pip: `pip install pyramco`
+version 0.9.69
+9-1-2020
 
 
-Requires the [requests module](https://pypi.org/project/requests/)
+Notes for 0.9.69 release: changed innacurate references to tuples in attributes, should be strings - changed arg types in same locations. Should resolve non-recognized string delimiter in some cases. Changes should be backward-compatible; revert to version 0.9.62 or lower if you experience issues and inspect code related to your attribute strings.
+
+A new major release is coming soon and will include breaking changes: 
+
+- Attributes and Attribute/Value string args will be normalized to accept proper lists/dict refs as args
+- API key will be detected as an environment variable OR in a config file, and throw an exception otherwise
 
 
-Your RAMCO API key should be set as an [environment variable:](https://stackoverflow.com/questions/5971312/how-to-set-environment-variables-in-python) `RAMCO_API_KEY`
+RAMCO API Documentation permalink:
+<https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf>
 
 
-pyramco accesses this variable as: `os.environ['RAMCO_API_KEY']`
-
-### To-Do:
-- [x] deploy to pypi
-- [ ] Add additional API key handling options
-- [x] begin documentation
-- [ ] testing tools
+Requires the **requests** module:
+<https://pypi.org/project/requests/>
 
 
-For now, method descriptions and API references for this module are located in the main file: `pyramco.py`
-
-Draft documentation is a work in progress at: https://pyramco.readthedocs.io/en/latest/ 
-
-
-[RAMCO API Documentation Permalink](https://api.ramcoams.com/api/v2/ramco_api_v2_doc.pdf)
+your RAMCO API key should be set as an environment variable `RAMCO_API_KEY`
 
 
 
-###### The authors of pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The  NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com. The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
+The contributors to Pyramco are not affiliated, associated, authorized, endorsed by, or in any way officially connected with RAMCO, The NATIONAL ASSOCIATION OF REALTORS®, or any of their subsidiaries or affiliates. The official RAMCO website can be found at https://ramcoams.com 
+
+The name RAMCO, as well as related names, marks, emblems and images are registered trademarks of their respective owners.
