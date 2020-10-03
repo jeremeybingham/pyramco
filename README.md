@@ -4,6 +4,9 @@ A complete Python wrapper class for the RAMCO API
 
 version 0.9.7
 10-3-2020
+https://pypi.org/project/pyramco/
+
+Installation: `pip install pyramco`
 
 
 Notes for 0.9.7 release:
