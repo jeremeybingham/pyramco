@@ -8,9 +8,9 @@ version 0.9.7
 
 Notes for 0.9.7 release:
 
-- Attributes and Attribute Values arguments now accept lists and dicts, respectively, and no longer accept formatted strings. THIS IS A BREAKING CHANGE. Use version <= 0.9.69 for backward compatibility. 
-- Strings passed to Attributes and Attribute Values arguments are now sanitized of literal "#" characters, which are detected and base64 encoded properly for CRM. (You may still override the default string delimiter in the usual manner)
-- API key will be detected as an environment variable OR in a config file, OR can be passed as an argument 'ramco_api_key'.
+- Attributes and Attribute Values arguments now accept lists and dicts, respectively, and no longer accept formatted strings. THIS IS A BREAKING CHANGE. Use version <= `0.9.69` for backward compatibility. 
+- Strings passed to Attributes and Attribute Values arguments are now sanitized of literal `#` characters, which are detected and base64 encoded properly for CRM. (You may still override the default string delimiter in the usual manner)
+- API key will be detected as an environment variable OR in a config file, OR can be passed as an argument `ramco_api_key`
 - Added a new error message/code for missing API key.
 
 
