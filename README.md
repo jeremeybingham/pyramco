@@ -2,14 +2,14 @@
 A complete Python wrapper class for the RAMCO API
 
 
-version 0.9.7
+version 0.9.70
 10-3-2020
 https://pypi.org/project/pyramco/
 
 Installation: `pip install pyramco`
 
 
-Notes for 0.9.7 release:
+Notes for 0.9.70 release:
 
 - Attributes and Attribute Values arguments now accept lists and dicts, respectively, and no longer accept formatted strings. THIS IS A BREAKING CHANGE. Use version <= `0.9.69` for backward compatibility. 
 - Strings passed to Attributes and Attribute Values arguments are now sanitized of literal `#` characters, which are detected and base64 encoded properly for CRM. (You may still override the default string delimiter in the usual manner)
