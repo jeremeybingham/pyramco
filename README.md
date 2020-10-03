@@ -2,16 +2,16 @@
 A complete Python wrapper class for the RAMCO API
 
 
-version 0.9.69
-9-1-2020
+version 0.9.7
+10-3-2020
 
 
-Notes for 0.9.69 release: changed innacurate references to tuples in attributes, should be strings - changed arg types in same locations. Should resolve non-recognized string delimiter in some cases. Changes should be backward-compatible; revert to version 0.9.62 or lower if you experience issues and inspect code related to your attribute strings.
+Notes for 0.9.7 release:
 
-A new major release is coming soon and will include breaking changes: 
-
-- Attributes and Attribute/Value string args will be normalized to accept proper lists/dict refs as args
-- API key will be detected as an environment variable OR in a config file, and throw an exception otherwise
+- Attributes and Attribute Values arguments now accept lists and dicts, respectively, and no longer accept formatted strings. THIS IS A BREAKING CHANGE. Use version <= 0.9.69 for backward compatibility. 
+- Strings passed to Attributes and Attribute Values arguments are now sanitized of literal "#" characters, which are detected and base64 encoded properly for CRM. (You may still override the default string delimiter in the usual manner)
+- API key will be detected as an environment variable OR in a config file, OR can be passed as an argument 'ramco_api_key'.
+- Added a new error message/code for missing API key.
 
 
 RAMCO API Documentation permalink:
@@ -20,9 +20,6 @@ RAMCO API Documentation permalink:
 
 Requires the **requests** module:
 <https://pypi.org/project/requests/>
-
-
-your RAMCO API key should be set as an environment variable `RAMCO_API_KEY`
 
 
 

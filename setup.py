@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='pyramco',
-    version='0.9.69',
+    version='0.9.7',
     author='Jeremey Bingham',
     author_email='info@mansard.net',
     description='A complete wrapper class for the RAMCO API',
